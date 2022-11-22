@@ -1,0 +1,95 @@
+*{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background: url(images/bg-pattern-bottom.svg) right -200px bottom -650px no-repeat, url(images/bg-pattern-top.svg) left -400px top -550px no-repeat;
+    background-color: hsl(185, 75%, 39%);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    text-align: center;
+    min-height: 100vh;
+    letter-spacing: 0.5px;
+}
+
+.card{
+    width: 350px;
+    height: 400px;
+    margin: auto;
+    border-radius: 25px;
+    background-color: aliceblue;
+    overflow: hidden;
+    box-shadow: hsl(227, 10%, 46%) 0px 3px 10px 0px;
+}
+
+.card-pattern img{
+    width: 100%;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.top-font{
+    margin-top: -45px;
+    display: grid;
+    gap: 0.2rem;
+}
+
+hr{
+    margin-top: 30px;
+    border: 0.1px solid hsl(227, 10%, 46%);
+}
+
+.bottom-font{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.bottom{
+    display: grid;
+    gap: 0.2rem;
+}
+
+.photo{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    border: 6px solid aliceblue;
+}
+
+.reaction, span, .country{
+    color: hsl(227, 10%, 46%);
+}
+
+.reaction{
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+span{
+    font-weight: normal;
+}
+
+.stats, .name{
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 415px) {
+    body{
+        background: url(images/bg-pattern-bottom.svg) right -750px bottom -550px no-repeat, url(images/bg-pattern-top.svg) left -750px top -550px no-repeat;
+        background-color: hsl(185, 75%, 39%);
+    }
+}
